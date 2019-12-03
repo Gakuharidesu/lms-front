@@ -3,7 +3,7 @@ import { LoginRequest } from '@/models/interface/request/Login'
 import { Login } from '@/models/interface/Login'
 
 class LoginCheckApi extends BaseApi<null, number> {
-  protected endPoint = 'mypage'
+  protected endPoint = 'me'
   protected readonly method = HttpMethods.Get
   public static get getInstance (): LoginCheckApi {
     return (
